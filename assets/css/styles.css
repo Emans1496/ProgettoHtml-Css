@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
+.navbar-toggler-icon-custom {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin-bottom: 4px;
+}
 
-p{
+.menu {
+  padding-top: 100px;
+}
+
+p {
   max-width: 400px;
 }
 
-.container-fluid { padding: 0;}
+.container-fluid {
+  padding: 0;
+}
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -119,8 +132,6 @@ p{
   font-style: italic;
 }
 
-/*------------------------ TYPING EFFECT ------------------------------*/
-
 .wrapper {
   height: 100vh;
   /*This part is important for centering*/
@@ -136,8 +147,8 @@ p{
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  color: black;
 }
-
 
 @keyframes typing {
   from {
@@ -151,7 +162,6 @@ p{
   }
 }
 
-/*------------------------ MENU STYLE ------------------------------*/
 
 body {
   font-family: Poppins;
@@ -166,6 +176,20 @@ ul,
 dl {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: transform 0.2s ease-in-out; /* Aggiungiamo un'animazione di transizione per la scala */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: black; /* Sfondo nero */
+  border-radius: 20px; /* Bordi arrotondati */
+  transform: scale(1.05); /* Effetto di scala ingrandito */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: white; /* Testo bianco */
 }
 
 
@@ -208,13 +232,11 @@ dl {
   transition: transform .2s;
 }
 
-.loghicontact img:hover{
+.loghicontact img:hover {
   transform: scale(1.3);
   transition: transform .2s;
 }
 
-
-/*------------------------ SECOND SECTOR STYLE ------------------------------*/
 
 .typing2 {
   width: 9ch;
@@ -226,12 +248,18 @@ dl {
   font-size: 2em;
 }
 
-.contact img{
+.contact img {
   max-width: 50px;
 }
+.menu .container-fluid {
+  padding-right: 15px; 
+  padding-left: 15px;
+}
 
-/*------------------------ MOBILE OPTIMIZATION ------------------------------*/
-@media only screen and (max-width: 600px) {
+
+
+
+@media only screen and (max-width: 400px) {
 
   .navbar>.container,
   .navbar>.container-fluid,
@@ -249,32 +277,34 @@ dl {
     padding-bottom: 10px;
   }
 
+  .menu {
+    padding-top: 80px;
+  }
 
-img {
-  width: 300px;
-}
-.typing {
-  width: 24ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 1.5em;
-}
+  img {
+    width: 300px;
+  }
 
 
-.typing2 {
-  width: 9ch;
-  animation: typing 2s steps(9), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 1.5em;
-}
+  .navbar-brand {
+    max-width: 15%;
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .menurow {
+    margin: 0px;
+  }
+
+  body {
+    padding-top: 10px;
+  }
 
 }
+
 
 @media screen and (min-width: 80rem) {
   .container {
@@ -316,6 +346,7 @@ html {
 h1 {
   font-size: 2rem;
 }
+
 
 @media (min-width: 1200px) {
   h1 {
