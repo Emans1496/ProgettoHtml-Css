@@ -3,18 +3,44 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/logo/Logotipo.jpg" type="image/x-icon">
+
+    <!-- for EmailJs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "mDiXtkSk2gayNFjo6",
+            });
+        })();
+    </script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- for Bootstrap-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/img/logo/Logotipo.jpg" type="image/x-icon">
+
+    <!-- for Opengraph for social-->
+    <meta property="og:title" content="Emanuele Squillante Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://experts.magicstore.cloud/wp-content/uploads/cache/images/emanuele-squillante/emanuele-squillante-2018516837.jpg">
+    <meta property="og:description" content="I'm your friendly neighborhood web developer">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- for style-->
     <link rel="stylesheet" href="assets/bootstrap/MDB5/css/mdb.min.css"> <!--MDB5-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <!-- for font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
     <title>Web Developer Emanuele Squillante</title>
 </head>
 
@@ -22,19 +48,22 @@
     <header>
         <nav class="navbar fixed-top navbar-light bg-light mb-auto navbar-nav-scroll">
             <div class="container-md">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo/emanuele squillante.svg"
-                        alt="emanuele-squillante-logo" width="100px" class="logomenu"></a>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo/logoMenu.png" alt="emanuele-squillante-logo"
+                        width="100px" class="logomenu"></a>
                 <ul>
-                    <a href="#" target="_blank">
+                    <a href="index.html" target="_blank">
+                        <il>Home</il>
+                    </a>
+                    <a href="#about" target="_blank">
                         <il>About</il>
                     </a>
-                    <a href="#" target="_blank">
-                        <il>Portfolio</il>
-                    </a>
-                    <a href="#" target="_blank">
+                    <a href="#skills" target="_blank">
                         <il>Skills</il>
+                        <a href="portfolio/index.html" target="_blank">
+                            <il>Portfolio</il>
+                        </a>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="#contact" target="_blank">
                         <il>Contact</il>
                     </a>
                 </ul>
@@ -53,35 +82,225 @@
 
 
     <section>
-        <div class="container my-5 mx-auto">
+        <div class="container-md my-5 mx-auto">
             <div class="row my-5 mx-auto">
-                <div class="col mx-auto my-5">
+                <div class="col-md-6 mx-auto my-5">
                     <h1 class="text-left">Hello World!</h1>
                     <div class="typing">
                         Welcome in my portfolio.
-                      </div>
-                      <p class="py-2">.WhoAmI{<br><strong>Personality-set:</strong> Web-Designer, AIaddicted, Musician, Friendly<br> Problem-Solver, Responsible, Football Lover, Gamer <br>
-                        Technology lover, Cheerful, Think positive; <br> }</p>
-                      <button type="button" class="btn btn-light mt-3">Show me who you are!</button>
                     </div>
-                <div class="col mx-auto my-5 mt-5">
-                    <img class="logoanimated" src="assets/img/logo/LogoAnimated.gif" alt="emanuele-squillante-logo" width="600px">
+                    <p class="py-2">.WhoAmI{<br><strong>Personality-set:</strong> Web-Designer, AIaddicted, Musician,
+                        Friendly<br> Problem-Solver, Responsible, Football Lover, Gamer <br>
+                        Technology lover, Cheerful, Think positive; <br> }</p>
+                    <a href="#about"><button type="button" class="btn btn-light mt-3">Show me who you are!</button></a>
+                </div>
+                <div class="col-md-6 mx-auto my-5 mt-5">
+                    <img class="logoanimated" src="assets/img/logo/LogoAnimated.gif" alt="emanuele-squillante-logo"
+                        width="600px">
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            colum
+    <section id="about">
+        <div class="container-md mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="typing2">About me.</div>
+                    <h2 class="fst-italic">A dreamer boy</h2>
+                    <p class="width: 500px">Hi, nice to meet you! <br>Welcome to the "about" section where you can learn
+                        more about me.
+                        My name is Emanuele Squillante, I am 28 years old and I was born in my beloved city of Naples.
+                        Since I was a child, my greatest passion has been information technology and everything that
+                        surrounds it.
+                        I will never be able to forget the first time I gave away my first PC with Windows96 installed.
+                        So I decided that in the course of making my passion become my job
+                        and still today I fight to make it better and better.
+                    </p>
+                    <h3 style="font-size: medium; max-width: 500px;">But I am much more than all this and I sincerely
+                        hope to be able to show even more of myself through an interview with your company!</h3>
+                    <a href="#contact"><button type="button" class="btn btn-light mt-3">Contact</button></a>
+                </div>
+                <div class="col-md-4 py-5 ps-5 mx-auto">
+                    <img src="assets/img/about/emanuelesquillantefoto.png" alt="" width="550px">
+                </div>
+            </div>
         </div>
     </section>
 
+    <section id="skills">
+        <div class="container-fluid mx-auto" style="background-color: black; padding-bottom: 50px;">
+            <div class="col-md-12 p-5 mx-auto mt-5" style="background-color: black;">
+                <h2 style="text-align: center; color: white; font-size: 60px;">My Skills</h2>
+                <div class="row pb-4 pt-2">
+                    <p style="text-align: center; color: white; font-size: 15px;">This is the most honest assessment
+                        possible of my abilities. <br>
+                        Obviously, for those that I have not yet developed partially or totally, I will continue to work
+                        hard over time to acquire them.</p>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-md-4 p-5 pt-3"
+                        style="border: solid; border-radius: 5px; border-color: white; border-width: 1px; 
+                    background-color: rgba(255, 255, 255, 0.906); box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 20px;">
+                        <div class="row" style="text-align: center;">
+                            <p style="text-align: center; color: black; font-size: 40px;">Hard Skill</p>
+                        </div>
+                        <div class="row justify-content-around">
+                            <img src="assets/img/skills/HTML5.png" alt="html" style="width: 100px;">
+                            <img src="assets/img/skills/CSS3.png" alt="css" style="width: 80px;">
+                            <img src="assets/img/skills/WordPress.png" alt="wp" style="width: 100px;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-5 pt-3"
+                        style="border: solid; border-radius: 5px; border-color: white; border-width: 1px; 
+                    background-color: rgba(255, 255, 255, 0.906); box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 20px;">
+                        <div class="row" style="text-align: center;">
+                            <p style="text-align: center; color: black; font-size: 40px;">Soft Skill</p>
+                        </div>
+                        <ul style=" text-align: center;">
+                            <il>Critical Thinking</il>
+                            <il>Communication</il>
+                            <il>Team Working</il>
+                            <il>Proactive Attitude</il>
+                            <il>Work Ethics</il>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
+    </section>
 
+    <section id="portfolio">
+        <div class="container-fluid mx-auto" style="background-color: white; padding-bottom: 50px;">
+            <div class="col-md-12 p-5 mx-auto mt-5" style="background-color: white;">
+                <h2 style="text-align: center; color: black; font-size: 60px;">My Work</h2>
+                <div class="row pb-4 pt-2">
+                    <p style="text-align: center; color: black; font-size: 15px;">This is a list of some jobs that I
+                        have done completely independently. <br>
+                        There are others carried out with a communication agency but for ethical correctness I will not
+                        include them.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 p-5 pt-3">
+                        <div class="card">
+                            <img src="assets/img/work/HotelPoemliaLogo.jpg" class="card-img-top" alt="HotelPomelia"
+                                ;" />
+                            <div class="card-body">
+                                <h5 class="card-title">Hotel Poemlia</h5>
+                                <p class="card-text" style="max-width: 200px;">The landing page of Hotel Pomelia, a
+                                    hotel that has had an ecological transition with the new generation</p>
+                                <a href="portfolio/hotelPomelia.html" class="btn btn-light" data-mdb-ripple-init>Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-5 pt-3">
+                        <div class="card">
+                            <img src="assets/img/work/LGDM.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body">
+                                <h5 class="card-title">La Gioia di Raccontare Miracoli</h5>
+                                <p class="card-text">The showcase site developed with WordPress <br> of a Christian book
+                                    that tells stories of miracles</p>
+                                <a href="portfolio/lgdrm.html" class="btn btn-light" data-mdb-ripple-init>Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-5 pt-3">
+                        <div class="card">
+                            <img src="assets/img/work/comingSoon.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+                            <div class="card-body">
+                                <h5 class="card-title">Coming soon</h5>
+                                <p class="card-text" style="max-width: 200px;">S2I projects will be uploaded soon<br>
+                                    "The most beautiful victory is the one that is yet to arrive" E.Ferrari</p>
+                                <button type="button" class="btn btn-light" data-mdb-ripple-init disabled>Coming
+                                    Soon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-5 pt-3 items-align-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <p class="card-text">Go to the "portfolio" page to discover all the projects carried out
+                                    so far</p>
+                                <a href="portfolio/index.html"><button type="button" class="btn btn-light" data-mdb-ripple-init>Portfolio</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <!-- Script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <section id="contact">
+        <div class="row">
+            <div class="col-md-2 p-5"></div>
+            <div class="col-md-4 p-5">
+                <img src="assets/img/logo/logoMenu.png" alt="logo" style="width: 200px;">
+                <h2 style="padding-top: 20px;">Contact me!</h2>
+                <h3>Thanks for coming this far!</h3>
+                <p>If my profile is in line with your company, contact me to grant me an
+                    interview and explain to you closely why I can be of help to your company.</p>
+                <h4 style="font-style: italic; font-size: 15px;">Fill out the form or contact me using an
+                    alternative <br>
+                    method between WhatsApp and Linkedin</h4>
+                <div class="row loghicontact" style="padding-top: 15px;">
+                    <div class="col-md-3 contact">
+                        <a href="https://wa.me/393483492558"><img src="assets/img/navbar/whatsapplogo.png"
+                                alt="WhatsApp"></a>
+                    </div>
+                    <div class="col-md-3 contact">
+                        <a href="https://www.linkedin.com/in/emanuele-squillante/"><img
+                                src="assets/img/navbar/linkedinlogo.png" alt="Linkedin"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-5" style="text-align: center;">
+                <div class="row g-3">
+                    <form id="myForm">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                                id="name" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                                id="lastname" required style="margin-top: 10px;">
+                        </div>
+                </div>
+                <div class="row g-3 pt-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Company Name" aria-label="Company name"
+                            id="company" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Request" aria-label="Request" id="request" required>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Other note" aria-label="Note" name="note"
+                            id="note"  style="height: 300px; text-align: center;">
+                    </div>
+                </div>
+                <div class="col-md-12 pb-3">
+                </div style="margin-bottom:10px;">
+                <button type="submit" class="btn btn-dark" style="width: 300px;">Submit</button>
+                <div id="alertContainer" style="margin-top: 10px;"></div>
+            </div>
+            </form>
+        </div>
+        <div class="col-md-2 p-5"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-12 p-3" style="background-color: rgb(0, 0, 0); text-align: center;">
+                <img src="assets/img/logo/logowhite.png" alt="logo" style="max-width: 100px;">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrapgit.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
