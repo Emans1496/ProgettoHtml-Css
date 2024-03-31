@@ -444,7 +444,7 @@ dl {
   }
 
   /*hard skill*/
-  .coll {
+  .col1 {
     border: solid;
     border-radius: 5px;
     border-color: white;
@@ -480,119 +480,6 @@ dl {
   .card-text {
     max-width: 200px;
   }
-
-  /* Header */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logomenu {
-  width: 100px;
-}
-
-.navbar-toggler-icon-custom {
-  border: 1px solid black;
-  padding: 3px;
-  border-radius: 3px;
-}
-
-.iconmenu {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Sezione Hello World */
-.WhoAmI {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-}
-
-/* Sezione About */
-.AboutMeText {
-  width: 500px;
-}
-
-.MoreThan {
-  font-size: medium;
-  max-width: 500px;
-}
-
-.AboutMeImage {
-  width: 550px;
-}
-
-/* Sezione Skills */
-.BackgroundBlack {
-  background-color: black;
-}
-
-.PaddingBottom50 {
-  padding-bottom: 50px;
-}
-
-.SkillsTitle {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-
-.SkillsDescription {
-  text-align: center;
-  color: white;
-  font-size: 15px;
-}
-
-.col1 {
-  border: solid;
-  border-radius: 5px;
-  border-color: white;
-  border-width: 1px;
-  background-color: rgba(255, 255, 255, 0.906);
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 20px;
-}
-
-/* Sezione Portfolio */
-.PortfolioTitle {
-  text-align: center;
-  color: black;
-  font-size: 60px;
-}
-
-.PortfolioDescription {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-}
-
-/* Sezione Contact */
-.ContactLogo {
-  width: 200px;
-}
-
-.ContactTitle {
-  text-align: center;
-}
-
-.ContactSubtitle {
-  text-align: center;
-}
-
-.ContactDescription {
-  text-align: center;
-}
-
-.ContactNote {
-  font-style: italic;
-  font-size: 15px;
-}
-
 
 
   @media only screen and (max-width: 450px) {
