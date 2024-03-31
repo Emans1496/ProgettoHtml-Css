@@ -1,9 +1,11 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Navbar */
 .navbar-toggler-icon-custom {
   width: 30px;
   height: 3px;
@@ -12,179 +14,10 @@
   margin-bottom: 4px;
 }
 
-.menu-collapsed {
-  display: none;
-}
-
-.menu-expanded {
-  display: block;
-}
-
-
-.menu {
-  padding-top: 100px;
-}
-
-p {
-  max-width: 400px;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-
-.typing {
-  width: 24ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-  color: black;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
-
-body {
-  font-family: Poppins;
-}
-
-il {
-  padding: 5px;
-}
-
-ol,
-ul,
-dl {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -201,15 +34,8 @@ dl {
   color: white;
 }
 
-
-.navbar a:link {
-  color: black;
-}
-
-.navbar a:visited {
-  color: black;
-}
-
+.navbar a:link,
+.navbar a:visited,
 .navbar a:active {
   color: black;
 }
@@ -217,494 +43,162 @@ dl {
 .navbar ul a:hover {
   background-color: black;
   color: white;
-  border: 20px;
   border-radius: 20px;
   padding: 5px;
-  transition: background-color .7s;
-  /* Animation */
-  transition: color .3s;
-  /* Animation */
+  transition: background-color .7s, color .3s;
 }
 
-.iconmenu img {
-  width: 25px;
-}
-
-.iconmenu img:hover {
-  transition: transform .2s;
-  /* Animation */
-  transform: scale(1.3)
-}
-
-.logomenu:hover {
-  transform: scale(1.3);
+.iconmenu img,
+.logomenu:hover,
+.loghicontact img:hover {
   transition: transform .2s;
 }
 
+.iconmenu img:hover,
+.logomenu:hover,
 .loghicontact img:hover {
   transform: scale(1.3);
-  transition: transform .2s;
 }
 
-
-.typing2 {
-  width: 9ch;
-  animation: typing 2s steps(9), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+/* Typography */
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.contact img {
-  max-width: 50px;
+p {
+  max-width: 400px;
 }
 
-.menu .container-fluid {
+h1,
+.h1works,
+.h1w,
+.h2a,
+.h2p,
+.mywork {
+  text-align: center;
+  font-size: 60px;
+}
+
+.pworks,
+.pa,
+.p2,
+.pp2,
+.workp {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Container */
+.container-fluid,
+.container {
+  padding: 0;
+}
+
+.container-fluid {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.cm1 {
-  background-color: #000;
+/* Other Elements */
+.menu-collapsed {
+  display: none;
 }
 
-.cm2 {
-  background-color: #000
+.menu-expanded {
+  display: block;
 }
 
-.h1works {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-
-
-.pworks {
-  text-align: center;
-  color: white;
-  font-size: 15px;
-}
-
-.fc {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-.fi {
-  max-width: 100px;
-}
-
-.hpc {
-  background-color: black;
-}
-
-.h1w {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-
-
-.imgw {
-  width: 300px;
-}
-
-.pw {
-  max-width: 500px;
-}
-
-.formimg {
-  width: 200px;
-}
-
-.formh2 {
-  padding-top: 20px;
-}
-
-.formh4 {
-  font-style: italic;
-  font-size: 15px;
-}
-
-.formcol1 {
-  text-align: center;
-}
-
-.ln {
-  margin-top: 10px;
-}
-
-.note {
-  height: 300px;
-  text-align: center;
-}
-
-.fmb {
-  margin-bottom: 10px;
-}
-
-.sub {
-  width: 300px;
-}
-
-.ac {
-  margin-top: 10px;
-}
-
-.loghicontact {
-  padding-top: 15px;
-}
-
-.h3a {
-  font-size: medium;
-  max-width: 500px;
-}
-
-.c1 {
-  background-color: black;
-  padding-bottom: 50px;
-}
-
-.c2 {
-  background-color: black;
-}
-
-.h2a {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-
-
-.pa {
-  text-align: center;
-  color: white;
-  font-size: 15px;
-}
-
-.p2 {
-  text-align: center;
-  color: black;
-  font-size: 40px;
-}
-
-
-.r1 {
-  text-align: center;
-}
-
-.s100 {
-  width: 100px;
-}
-
-.s80 {
-  width: 80px;
-}
-
-.uls {
-  text-align: center;
-}
-
-.p1 {
-  background-color: white;
-  padding-bottom: 50px;
-}
-
-.h2p {
-  text-align: center;
-  color: black;
-  font-size: 60px;
-}
-
-.pp2 {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-
-  .card-text {
-    max-width: 200px;
-  }
-
-  .r2 {
-    text-align: center;
-  }
-
-  .r2s {
-    text-align: center;
-    color: white;
-    font-size: 60px;
-  }
-
-  .p2 {
-    text-align: center;
-    color: black;
-    font-size: 40px;
-  }
-
-  /*hard skill*/
-  .coll {
-    border: solid;
-    border-radius: 5px;
-    border-color: white;
-    border-width: 1px;
-    background-color: rgba(255, 255, 255, 0.906);
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 20px;
-  }
-
-  .hardskill {
-    text-align: center;
-    color: black;
-    font-size: 40px;
-  }
-
-  .portfolio1 {
-    background-color: white;
-    padding-bottom: 50px;
-  }
-
-  h2 .mywork {
-    text-align: center;
-    color: black;
-    font-size: 60px;
-  }
-
-  p .workp {
-    text-align: center;
-    color: black;
-    font-size: 15px;
-  }
-
-  .card-text {
-    max-width: 200px;
-  }
-
-  /* Header */
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 100px;
 }
 
-.logomenu {
-  width: 100px;
+.wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
-.navbar-toggler-icon-custom {
-  border: 1px solid black;
-  padding: 3px;
-  border-radius: 3px;
-}
-
-.iconmenu {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Sezione Hello World */
-.WhoAmI {
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
+/* Animations */
+.typing,
+.typing2 {
+  width: 24ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5em;
   color: black;
-  margin-bottom: 10px;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 }
 
-/* Sezione About */
-.AboutMeText {
-  width: 500px;
-}
-
-.MoreThan {
-  font-size: medium;
-  max-width: 500px;
-}
-
-.AboutMeImage {
-  width: 550px;
-}
-
-/* Sezione Skills */
-.BackgroundBlack {
-  background-color: black;
-}
-
-.PaddingBottom50 {
-  padding-bottom: 50px;
-}
-
-.SkillsTitle {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-}
-
-.SkillsDescription {
-  text-align: center;
-  color: white;
-  font-size: 15px;
-}
-
-.col1 {
-  border: solid;
-  border-radius: 5px;
-  border-color: white;
-  border-width: 1px;
-  background-color: rgba(255, 255, 255, 0.906);
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 20px;
-}
-
-/* Sezione Portfolio */
-.PortfolioTitle {
-  text-align: center;
-  color: black;
-  font-size: 60px;
-}
-
-.PortfolioDescription {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-}
-
-/* Sezione Contact */
-.ContactLogo {
-  width: 200px;
-}
-
-.ContactTitle {
-  text-align: center;
-}
-
-.ContactSubtitle {
-  text-align: center;
-}
-
-.ContactDescription {
-  text-align: center;
-}
-
-.ContactNote {
-  font-style: italic;
-  font-size: 15px;
-}
-
-
-
-  @media only screen and (max-width: 450px) {
-
-    .navbar>.container,
-    .navbar>.container-fluid,
-    .navbar>.container-sm,
-    .navbar>.container-md,
-    .navbar>.container-lg,
-    .navbar>.container-xl,
-    .navbar>.container-xxl {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: space-around;
-      align-content: center;
-      flex-direction: column;
-      padding-bottom: 10px;
-    }
-
-    .menu {
-      padding-top: 80px;
-    }
-
-    img {
-      width: 300px;
-    }
-
-
-    .navbar-brand {
-      max-width: 15%;
-      margin-right: auto;
-    }
-
-    .navbar-toggler {
-      margin-left: auto;
-    }
-
-    .menurow {
-      margin: 0px;
-    }
-
-    body {
-      padding-top: 10px;
-    }
-
-    .typing {
-      width: 24ch;
-      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid;
-      font-family: monospace;
-      font-size: 22px;
-      color: black;
-    }
-
+@keyframes typing {
+  from {
+    width: 0
   }
+}
 
-
-  @media screen and (min-width: 80rem) {
-    .container {
-      margin: 1em 2em;
-    }
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
 
-  .container {
-    column-count: 3;
-  }
-
-  .container {
-    column-width: 10em;
-  }
-
-  .container {
+/* Responsive */
+@media only screen and (max-width: 450px) {
+  .navbar>.container,
+  .navbar>.container-fluid,
+  .navbar>.container-sm,
+  .navbar>.container-md,
+  .navbar>.container-lg,
+  .navbar>.container-xl,
+  .navbar>.container-xxl {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
   }
 
-  .item {
-    flex: 1;
+  .menu {
+    padding-top: 80px;
   }
 
+  img {
+    width: 300px;
+  }
+
+  .navbar-brand {
+    max-width: 15%;
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .menurow {
+    margin: 0px;
+  }
+
+  body {
+    padding-top: 10px;
+  }
+
+  .typing,
+  .typing2 {
+    width: 24ch;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 80rem) {
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em 2em;
   }
+}
 
-  img,
-  picture,
-  video {
-    max-width: 100%;
-  }
+/* Additional Styles */
+/* Add your additional styles here */
 
-  html {
-    font-size: 1em;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 4rem;
-    }
-  }
-
-  h1 {
-    font-size: 6vw;
-  }
-
-  h1 {
-    font-size: calc(1.5rem + 3vw);
-  }}
