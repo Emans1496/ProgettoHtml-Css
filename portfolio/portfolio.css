@@ -12,6 +12,15 @@
   margin-bottom: 4px;
 }
 
+.menu-collapsed {
+  display: none;
+}
+
+.menu-expanded {
+  display: block;
+}
+
+
 .menu {
   padding-top: 100px;
 }
@@ -140,14 +149,14 @@ p {
 }
 
 .typing {
-  width: 31ch;
+  width: 24ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
-  color: white;
+  color: black;
 }
 
 @keyframes typing {
@@ -176,6 +185,20 @@ ul,
 dl {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: black; 
+  border-radius: 20px; 
+  transform: scale(1.05); 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: white; 
 }
 
 
@@ -237,12 +260,15 @@ dl {
 .contact img {
   max-width: 50px;
 }
+.menu .container-fluid {
+  padding-right: 15px; 
+  padding-left: 15px;
+}
 
 
 
 
-/*------------------------ MOBILE OPTIMIZATION ------------------------------*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
   .navbar>.container,
   .navbar>.container-fluid,
@@ -286,7 +312,19 @@ dl {
     padding-top: 10px;
   }
 
+  .typing {
+    width: 24ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 22px;
+    color: black;
+  }
+
 }
+
 
 @media screen and (min-width: 80rem) {
   .container {
