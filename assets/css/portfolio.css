@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-
+.navbar-toggler-icon-custom {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin-bottom: 4px;
+}
 
 .menu {
   padding-top: 100px;
@@ -173,6 +179,29 @@ dl {
 }
 
 
+.navbar a:link {
+  color: black;
+}
+
+.navbar a:visited {
+  color: black;
+}
+
+.navbar a:active {
+  color: black;
+}
+
+.navbar ul a:hover {
+  background-color: black;
+  color: white;
+  border: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  transition: background-color .7s;
+  /* Animation */
+  transition: color .3s;
+  /* Animation */
+}
 
 .iconmenu img {
   width: 25px;
@@ -210,57 +239,11 @@ dl {
 }
 
 
-.navbar-toggler-icon-custom {
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.navbar-nav .nav-item .nav-link {
-  transition: transform 0.2s ease-in-out;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  background-color: black; 
-  border-radius: 20px; 
-  transform: scale(1.05); 
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: white; 
-}
-
-
-.navbar a:link {
-  color: black;
-}
-
-.navbar a:visited {
-  color: black;
-}
-
-.navbar a:active {
-  color: black;
-}
-
-.navbar ul a:hover {
-  background-color: black;
-  color: white;
-  border: 20px;
-  border-radius: 20px;
-  padding: 5px;
-  transition: background-color .7s;
-  /* Animation */
-  transition: color .3s;
-  /* Animation */
-}
-
 
 
 /*------------------------ MOBILE OPTIMIZATION ------------------------------*/
 @media only screen and (max-width: 400px) {
+
   .navbar>.container,
   .navbar>.container-fluid,
   .navbar>.container-sm,
@@ -277,17 +260,6 @@ dl {
     padding-bottom: 10px;
   }
 
-
-  .navbar-brand {
-    max-width: 15%;
-    margin-right: auto;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-
-
   .menu {
     padding-top: 80px;
   }
@@ -297,6 +269,14 @@ dl {
   }
 
 
+  .navbar-brand {
+    max-width: 15%;
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
 
   .menurow {
     margin: 0px;
