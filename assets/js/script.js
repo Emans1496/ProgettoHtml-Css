@@ -35,3 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
     sendMail();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButton = document.querySelector(".navbar-toggler");
+  const menu = document.querySelector(".navbar-collapse");
+
+  menuButton.addEventListener("click", function() {
+    menu.classList.toggle("show");
+  });
+});
+
