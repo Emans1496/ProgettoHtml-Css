@@ -179,17 +179,17 @@ dl {
 }
 
 .navbar-nav .nav-item .nav-link {
-  transition: transform 0.2s ease-in-out; /* Aggiungiamo un'animazione di transizione per la scala */
+  transition: transform 0.2s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  background-color: black; /* Sfondo nero */
-  border-radius: 20px; /* Bordi arrotondati */
-  transform: scale(1.05); /* Effetto di scala ingrandito */
+  background-color: black; 
+  border-radius: 20px; 
+  transform: scale(1.05); 
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: white; /* Testo bianco */
+  color: white; 
 }
 
 
