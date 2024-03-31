@@ -443,7 +443,8 @@ dl {
     font-size: 40px;
   }
 
-  div .col1 {
+  /*hard skill*/
+  .col1 {
     border: solid;
     border-radius: 5px;
     border-color: white;
@@ -453,7 +454,7 @@ dl {
     margin-bottom: 20px;
   }
 
-  p .hardskill {
+  .hardskill {
     text-align: center;
     color: black;
     font-size: 40px;
