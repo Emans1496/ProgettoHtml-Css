@@ -192,13 +192,13 @@ dl {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  background-color: black; 
-  border-radius: 20px; 
-  transform: scale(1.05); 
+  background-color: black;
+  border-radius: 20px;
+  transform: scale(1.05);
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: white; 
+  color: white;
 }
 
 
@@ -260,10 +260,166 @@ dl {
 .contact img {
   max-width: 50px;
 }
+
 .menu .container-fluid {
-  padding-right: 15px; 
+  padding-right: 15px;
   padding-left: 15px;
 }
+
+.cm1 {
+  background-color: #000;
+}
+
+.cm2 {
+  background-color: #000
+}
+
+.h1works {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.pworks {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.fc {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.fi {
+  max-width: 100px;
+}
+
+.hpc {
+  background-color: black;
+}
+
+.h1w {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.imgw {
+  width: 300px;
+}
+
+.pw {
+  max-width: 500px;
+}
+
+.formimg {
+  width: 200px;
+}
+
+.formh2 {
+  padding-top: 20px;
+}
+
+.formh4 {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.formcol1 {
+  text-align: center;
+}
+
+.ln {
+  margin-top: 10px;
+}
+
+.note {
+  height: 300px;
+  text-align: center;
+}
+
+.fmb {
+  margin-bottom: 10px;
+}
+
+.sub {
+  width: 300px;
+}
+
+.ac {
+  margin-top: 10px;
+}
+
+.loghicontact {
+  padding-top: 15px;
+}
+
+.h3a {
+  font-size: medium;
+  max-width: 500px;
+}
+
+.c1 {
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.c2 {
+  background-color: black;
+}
+
+.h2a {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.pa {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.p2 {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+.c3 {
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.906);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.471), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+}
+
+.r1 {
+  text-align: center;
+}
+
+.s100 {
+  width: 100px;
+}
+
+.s80 {
+  width: 80px;
+}
+
+.uls{text-align: center;}
+
+.p1{background-color: white; padding-bottom: 50px;}
+
+.p2{background-color: white;}
+
+.h2p{text-align: center; color: black; font-size: 60px;}
+
+.pp{text-align: center; color: black; font-size: 15px;}
+
+.card-text{max-width: 200px;}
 
 
 

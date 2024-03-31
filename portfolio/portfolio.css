@@ -399,11 +399,17 @@ dl {
   text-align: center;
 }
 
-.fmb{margin-bottom:10px;}
+.fmb {
+  margin-bottom: 10px;
+}
 
-.sub{width: 300px;}
+.sub {
+  width: 300px;
+}
 
-.ac{margin-top: 10px;}
+.ac {
+  margin-top: 10px;
+}
 
 .loghicontact {
   padding-top: 15px;
