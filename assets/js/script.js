@@ -9,24 +9,34 @@ function sendMail() {
 
   emailjs.send('service_6g5fnea', 'template_2ivri26', templateParams)
     .then(function() {
-      // Alert Bootstrap personalizzato per indicare che il messaggio è stato inviato con successo
+
       let alertDiv = document.createElement("div");
       alertDiv.classList.add("alert", "alert-success");
       alertDiv.setAttribute("role", "alert");
       alertDiv.textContent = "Your message has been sent!";
       
-      // Aggiungi l'alert al contenitore dell'alert (sostituisci "alertContainer" con l'ID del tuo contenitore)
+     )
       document.getElementById("alertContainer").appendChild(alertDiv);
 
-      // Rimuovi l'alert dopo un certo periodo di tempo (opzionale)
       setTimeout(function() {
         alertDiv.remove();
-      }, 5000); // Rimuovi l'alert dopo 5 secondi (5000 millisecondi)
+      }, 5000);
     })
     .catch(function(error) {
-      // Alert per indicare che si è verificato un errore durante l'invio del messaggio
+
       alert("Si è verificato un errore durante l'invio del messaggio: " + error);
     });
+}
+
+function toggleMenu() {
+  var menu = document.getElementById("navbarNav");
+  if (menu.classList.contains("menu-collapsed")) {
+      menu.classList.remove("menu-collapsed");
+      menu.classList.add("menu-expanded");
+  } else {
+      menu.classList.remove("menu-expanded");
+      menu.classList.add("menu-collapsed");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -35,13 +45,3 @@ document.addEventListener("DOMContentLoaded", function() {
     sendMail();
   });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  const menuButton = document.querySelector(".navbar-toggler");
-  const menu = document.querySelector(".navbar-collapse");
-
-  menuButton.addEventListener("click", function() {
-    menu.classList.toggle("show");
-  });
-});
-

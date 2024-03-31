@@ -12,6 +12,15 @@
   margin-bottom: 4px;
 }
 
+.menu-collapsed {
+  display: none;
+}
+
+.menu-expanded {
+  display: block;
+}
+
+
 .menu {
   padding-top: 100px;
 }
