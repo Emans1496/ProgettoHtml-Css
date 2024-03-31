@@ -431,13 +431,19 @@ dl {
     text-align: center;
   }
 
+  .r2s {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+
   .p2 {
     text-align: center;
     color: black;
     font-size: 40px;
   }
 
-  .col1 {
+  div .col1 {
     border: solid;
     border-radius: 5px;
     border-color: white;
@@ -447,15 +453,32 @@ dl {
     margin-bottom: 20px;
   }
 
-  .hardskill{text-align: center; color: black; font-size: 40px;}
+  p .hardskill {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+  }
 
-  .portfolio1{background-color: white; padding-bottom: 50px;}
+  .portfolio1 {
+    background-color: white;
+    padding-bottom: 50px;
+  }
 
-  .mywork{text-align: center; color: black; font-size: 60px;}
+  h2 .mywork {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+  }
 
-  .workp{text-align: center; color: black; font-size: 15px;}
+  p .workp {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+  }
 
-  .card-text{max-width: 200px;}
+  .card-text {
+    max-width: 200px;
+  }
 
 
   @media only screen and (max-width: 450px) {
