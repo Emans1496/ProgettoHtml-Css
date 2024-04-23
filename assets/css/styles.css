@@ -519,12 +519,20 @@ h1 {
   font-size: 40px;
 }
 
-.s100 {
+.softskill p{
+  font-size: 20px;
+}
+
+.hardskill p{
+  font-size: 20px;
+}
+
+.softskill img{
   width: 100px;
 }
 
-.s80 {
-  width: 80px;
+.hardskill img{
+  width: 100px;
 }
 
 
